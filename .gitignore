@@ -135,3 +135,8 @@ __azurite_db*__.json
 .python_packages
 
 old_func.txt
+upsert.py
+database.py
+cosmosdb.env
+test_api_old.py
+test_example.py

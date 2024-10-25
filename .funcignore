@@ -6,3 +6,8 @@ __queuestorage__
 local.settings.json
 test
 .venv
+old_func.txt
+test_example.py
+test_api.py
+database.py
+upsert.py
