@@ -26,6 +26,8 @@ jobs:
           python -m pip install --upgrade pip playwright
           pip install -r requirements.txt
       - name: Test with pytest
+        env:
+          COSMOS_DB: ${{ secrets.COSMOS_DB }}
         run: |
           pip install pytest
           pytest test_api.py
