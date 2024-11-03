@@ -54,13 +54,11 @@ jobs:
         pip install -r requirements.txt --target=".python_packages/lib/site-packages"
         popd
 
-    - name: Install python-dotenv
-      run: pip install python-dotenv
-
-    - name: Test with pytest
+    - name: Run tests
+      env:
+        COSMOS_DB: ${{ secrets.COSMOS_DB }}
       run: |
-        pip install pytest
-        pytest ./test_api.py
+        pytest test_api.py
 
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
