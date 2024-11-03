@@ -29,7 +29,7 @@ def test_api_read():
     with sync_playwright() as p:
         request_context: APIRequestContext = p.request.new_context()
     
-        response = request_context.get("https://visitor-counter-api-http-trigger.azurewebsites.net/api/http_trigger_visitor_counter")
+        response = request_context.get("https://visitor-counter-api-http-trigger.azurewebsites.net/api/visitor_counter")
     
         assert response.status == 200, f"Request failed with status {response.status}" 
     
