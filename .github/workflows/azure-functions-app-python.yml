@@ -58,6 +58,7 @@ jobs:
       env:
         COSMOS_DB: ${{ secrets.COSMOS_DB }}
       run: |
+        pip install pytest
         pytest test_api.py
 
     - name: 'Run Azure Functions Action'
