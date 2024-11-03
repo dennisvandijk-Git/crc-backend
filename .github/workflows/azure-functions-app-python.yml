@@ -57,7 +57,7 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest test_test.py
+        pytest test_api.py
 
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
