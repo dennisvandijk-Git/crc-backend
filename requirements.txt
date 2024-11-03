@@ -6,3 +6,5 @@ azure-core
 azure-functions
 azure-data-tables
 python-dotenv
+playwright
+pytest
